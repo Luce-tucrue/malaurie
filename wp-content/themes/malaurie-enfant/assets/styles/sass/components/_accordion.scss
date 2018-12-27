@@ -1,0 +1,122 @@
+.accordion {
+    margin-bottom: 1.5rem;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: $background-accordion-header;
+
+        &--left {
+            display: flex;
+            align-items: center;
+        }
+
+        &--right {
+            display: flex;
+            align-items: center;
+        }
+
+        &__icon {
+            font-size: 3rem;
+        }
+
+        &__title {
+            margin-left: 1rem;
+
+            &__text {
+                margin: 0;
+
+                &--bold {
+                    font-weight: bold;
+                }
+            }
+
+            &__state {
+                font-size: 1.3rem;
+                font-weight: bold;
+
+                &--valid {
+                    color: $color-accordion-contract-valid;
+                }
+
+                &--unvalid {
+                    color: $color-accordion-contract-unvalid;
+                }
+            }
+        }
+
+        &__power {
+            margin: 0 1.5rem;
+        }
+
+        &__action {
+            position: relative;
+            padding-left: 1.5rem;
+            color: $color-accordion-action-link;
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: .1rem;
+                height: 100%;
+                background-color: $background-accordion-action-separator;
+                content: "";
+            }
+
+            .btn {
+                padding-top: 0;
+                padding-bottom: 0;
+                color: $color-accordion-action-link;
+                font-size: $font-size-smaller;
+            }
+        }
+    }
+
+    &__content {
+        padding: 2rem 1.5rem;
+        border-top: 1px solid $border-accordion-content;
+        background-color: $background-accordion-content;
+
+        &__contract {
+
+            &__text {
+                font-size: $font-size-smaller;
+
+                &__label {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &__title {
+            margin-bottom: 0;
+            color: $color-accordion-content-title;
+            font-weight: bold;
+        }
+
+        &__text {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid $border-accordion-content-text;
+            background-color: $background-accordion-content-text;
+            font-size: $font-size-smaller;
+            line-height: 1.3;
+
+            .accordion__content__legals & {
+                height: 15rem;
+                overflow-y: scroll;
+            }
+        }
+
+        &__action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: $font-size-smaller;
+        }
+    }
+}

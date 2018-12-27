@@ -1,0 +1,12 @@
+# Ignore fichiers projets sublime text
+*.sublime-project
+*.sublime-workspace
+
+# VSCode conf
+.vscode/*
+
+# PHPStorm conf
+.idea/*
+
+#Integration
+wp-content/themes/malaurie-enfant/node_modules/*

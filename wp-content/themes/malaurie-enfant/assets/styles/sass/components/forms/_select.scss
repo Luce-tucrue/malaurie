@@ -1,0 +1,87 @@
+.select {
+
+    .producer-area & {
+        display: flex;
+        position: relative;
+        border: 1px solid $border-select;
+        border-radius: .3rem;
+        background-color: $background-select;
+
+        &__image {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            height: 2.5rem;
+            transform: translateY(-50%);
+        }
+
+        .select-initial {
+            height: inherit !important; // sass-lint:disable-line no-important
+            padding: 1.1rem 1rem 1.1rem 4rem;
+            border: 0;
+            font-size: $font-size-smaller;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        [class^="icon-"],
+        [class*=" icon-"] {
+            position: absolute;
+            top: 50%;
+            right: .7rem;
+            transform: translateY(-50%);
+            background-color: $background-select-icon;
+            color: $color-select-icon;
+        }
+
+    }
+
+    .subscription-area & {
+
+        .select__content {
+            position: relative;
+        }
+
+        .select-initial {
+            height: 100%;
+            padding: 1.3rem 1.5rem;
+            border: 1px solid $border-select-subscription;
+            border-radius: 0;
+            font-family: $font-subscription;
+            font-size: $font-size-basic;
+            line-height: 1;
+        }
+
+        &__options {
+            padding: .8rem 1rem .8rem 4rem;
+        }
+
+    }
+}
+
+.select__group {
+
+    .subscription-area & {
+        display: flex;
+        align-items: center;
+
+        .label {
+            margin-right: 3rem;
+        }
+
+        .select__image {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+        }
+
+        .select-initial {
+            padding: .5rem 1rem .5rem 3rem;
+        }
+    }
+
+}
+

@@ -1,0 +1,49 @@
+.account-creation {
+    padding: 3.3rem 2.5rem 4.5rem 2.5rem;
+    border: 1px solid $border-subscription;
+    border-bottom: 0;
+    background-color: $background-account-creation;
+
+    &__title {
+        margin-bottom: 4rem;
+        color: $color-account-creation-title;
+        font-family: $font-bolder;
+        font-size: $font-size-subscription-title;
+        text-transform: uppercase;
+    }
+
+    &__radio-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            font-size: 2.2rem;
+
+            &__image {
+                display: flex;
+                align-items: center;
+                min-height: 13rem;
+                margin-bottom: 3rem;
+            }
+
+            &__input {
+                position: relative;
+            }
+
+            &__text {
+
+                .radio__label {
+                    padding: 3rem 0 0 0;
+
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,265 @@
+.btn {
+    padding: 1rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &__submit {
+        position: relative;
+        padding: 1rem 3rem 1rem 4.5rem;
+        color: $color-submit-button;
+        text-align: center;
+
+        .producer-area & {
+            background-color: $background-submit-button;
+            font-family: $font-bolder;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+
+            &::before {
+                position: absolute;
+                left: 1.5rem;
+                font-family: "icomoon";
+                content: "\e921";
+            }
+        }
+
+        .subscription-area & {
+            font-family: $font-subscription;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .signin-area & {
+            background-color: $background-connect-box-button-signin;
+        }
+
+        .signup-area & {
+            background-color: $background-connect-box-button-signup;
+        }
+
+    }
+
+    &__to-sign {
+        position: relative;
+        padding: 0 0 0 3rem;
+        color: $color-icon-to-sign-button;
+        font-size: 1.3rem;
+        font-weight: bold;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            color: $color-icon-to-sign-button;
+            font-family: "icomoon";
+            font-size: 2rem;
+            content: "\e901";
+        }
+    }
+
+    &__prev {
+        position: relative;
+        padding-left: 3rem;
+        border-right: 0;
+        border-bottom: 0;
+        background-color: $background-prev-button;
+        color: $color-prev-button;
+        font-family: $font-subscription;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            left: 1rem;
+            font-family: "icomoon";
+            content: "\e90e";
+        }
+
+        &:hover {
+            color: $color-prev-button;
+            text-decoration: underline;
+        }
+    }
+
+    &__next {
+        position: relative;
+        padding-right: 3rem;
+        padding-left: 1rem;
+        border-right: 0;
+        border-bottom: 0;
+        background-color: $background-next-button;
+        color: $color-next-button;
+        font-family: $font-subscription;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: none;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            right: 1rem;
+            font-family: "icomoon";
+            content: "\e90d";
+        }
+
+        &:hover {
+            color: $color-prev-button;
+            text-decoration: underline;
+        }
+
+        &__profile {
+            font-size: 1.8rem;
+
+            &::before {
+                top: 1.7rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__download {
+        position: relative;
+        padding-left: 2rem;
+        border: 0;
+        background-color: transparent;
+        color: $color-download-button;
+        font-size: 1.3rem;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            font-family: "icomoon";
+            content: "\e925";
+        }
+
+        .producer-area & {
+            position: relative;
+            background-color: $background-download-button-producer-area;
+            color: $color-download-button-producer-area;
+            font-size: 1.3rem;
+            text-align: center;
+            text-transform: uppercase;
+
+            &::before {
+                position: absolute;
+                left: 1.5rem;
+                font-family: "icomoon";
+                content: "\e924";
+            }
+        }
+
+    }
+
+    &__show {
+        position: relative;
+        padding-left: 2rem;
+        border-bottom: 0;
+        background-color: transparent;
+        color: $color-download-button;
+        font-size: 1.6rem;
+        text-decoration: underline;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            font-family: "icomoon";
+            content: "\e900";
+        }
+    }
+
+    &__confirmation,
+    &__producer-area {
+        padding-right: 2rem;
+        padding-left: 2rem;
+        background-color: $background-producer-area-button;
+        color: $color-producer-area-button;
+        font-family: $font-subscription;
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+
+        &:hover {
+            color: $color-producer-area-button;
+        }
+    }
+
+    &__contact-us {
+        position: relative;
+        background-color: $background-contact-us-button;
+        color: $color-contact-us-button;
+        font-size: 1.3rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        &::before {
+            position: absolute;
+            left: 1.5rem;
+            font-family: "icomoon";
+            content: "\e906";
+        }
+
+        &:hover {
+            background-color: lighten($background-contact-us-button, 5%);
+            color: $color-contact-us-button;
+        }
+    }
+
+    &__add {
+        position: relative;
+        padding-left: 4.5rem;
+        border: 1px solid $border-add-button;
+        background-color: $background-add-button;
+        color: $color-add-button;
+        font-size: 1.3rem;
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+            color: $color-icon-add-button;
+            font-family: "icomoon";
+            font-size: 2.5rem;
+            content: "\e936";
+        }
+
+        &:hover {
+            background-color: darken($background-add-button, 5%);
+            color: $color-add-button;
+        }
+    }
+
+    &--large {
+        width: 100%;
+    }
+
+    &__add-new {
+        position: relative;
+        padding-left: 3rem;
+        border: 0;
+        background-color: transparent;
+        color: $color-add-new-btn;
+        font-family: $font-bolder-xl;
+        text-decoration: underline;
+
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            font-family: "icomoon";
+            font-size: 2rem;
+            content: "\e900";
+        }
+    }
+}
+

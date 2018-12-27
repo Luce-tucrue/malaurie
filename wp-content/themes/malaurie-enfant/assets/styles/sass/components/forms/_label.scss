@@ -1,0 +1,18 @@
+.label {
+
+    .subscription-area & {
+        margin: 0;
+        font-family: $font-bolder;
+
+        &__group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__legend {
+            font-family: $font-normal;
+            font-size: $font-size-smaller;
+            text-align: justify;
+        }
+    }
+}

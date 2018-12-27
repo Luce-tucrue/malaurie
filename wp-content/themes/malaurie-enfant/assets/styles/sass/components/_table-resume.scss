@@ -1,0 +1,103 @@
+.table-resume {
+
+    &__table {
+
+        &__row {
+            padding: 0 1.5rem;
+            color: $color-bill-resume-table-row;
+            font-family: $font-bolder-xxl;
+
+            .table__no-header-no-filter & {
+
+                &:first-of-type > td {
+                    border-top: 0;
+                }
+            }
+        }
+
+        .alert-delay {
+            color: $color-bill-resume-alert-delay;
+
+            .table-resume__table__price {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    left: -2rem;
+                    padding-right: 1.5rem;
+                    font-family: "icomoon";
+                    content: "\e931";
+                }
+            }
+
+            .table-resume__table__action__link {
+                color: $color-bill-resume-alert-delay-actions;
+
+                &__text {
+                    border-color: $color-bill-resume-alert-delay-actions;
+                }
+            }
+
+        }
+
+        .alert-in-progress {
+            color: $color-bill-resume-alert-in-progress;
+
+            .table-resume__table__action__link {
+                color: $color-bill-resume-alert-in-progress-actions;
+
+                &__text {
+                    border-color: $color-bill-resume-alert-in-progress-actions;
+                }
+            }
+
+        }
+
+        [class^="icon-"],
+        [class*=" icon-"] {
+            margin-right: 1.5rem;
+        }
+
+        &__image {
+            width: 2.5rem;
+        }
+
+        &__date {
+            font-family: $font-normal;
+        }
+
+        &__action__link {
+            padding: 0;
+            border: 0;
+            background-color: transparent;
+            color: $color-bill-resume-table-link;
+
+            &--disabled {
+                color: $color-bill-resume-table-link-disabled !important; // sass-lint:disable-line no-important
+                cursor: default;
+                pointer-events: none;
+            }
+
+            &__text {
+                border-bottom: .1rem solid $border-bill-resume-table-link;
+                font-family: $font-bolder-xxl;
+                font-size: $font-size-smaller;
+
+                .table-resume__table__action__link--disabled & {
+                    border-color: $border-bill-resume-table-link-disabled;
+                }
+            }
+
+            &:hover {
+                color: $color-bill-resume-table-link;
+                text-decoration: none;
+                cursor: pointer;
+
+                .table-resume__table__action__link--disabled & {
+                    color: $color-bill-resume-table-link-disabled !important; // sass-lint:disable-line no-important
+                }
+            }
+        }
+    }
+}
+

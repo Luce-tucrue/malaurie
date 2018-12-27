@@ -1,0 +1,23 @@
+.toolbox {
+    padding-right: 3rem;
+
+    &__link {
+        padding: 0 1rem;
+        font-size: 1.2rem;
+
+        &:hover  {
+            text-decoration: none;
+        }
+
+        [class^="icon-"],
+        [class*=" icon-"] {
+            font-size: 1.5rem;
+
+            &::before { //TODO update
+                color: $grey-light;
+
+            }
+        }
+
+    }
+}

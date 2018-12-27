@@ -1,0 +1,61 @@
+.tabs-information {
+
+    &__nav {
+        align-items: center;
+        margin-bottom: 1.5rem;
+        border: .1rem solid $border-tabs-information-nav;
+        border-radius: .3rem;
+        background-color: $background-tabs-information-nav;
+
+        &__item {
+            flex-basis: 0;
+            flex-grow: 1;
+
+            &:not(:last-child) {
+                border-right: .1rem solid $border-tabs-information-nav;
+            }
+
+            &__link {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1.5rem 3rem;
+                color: $color-tabs-information-nav-text;
+
+                &.active {
+                    background-color: $background-tabs-information-nav-active;
+                    color: $color-tabs-information-nav-active-text;
+                }
+
+                &__text {
+                    font-size: $font-size-bigger;
+                }
+
+                &__image {
+                    width: 2.5rem;
+                    margin-left: 1.5rem;
+                }
+
+                &:hover {
+                    color: $color-tabs-information-nav-active-text;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+    &__content {
+
+        &__table__row {
+            padding: 0 1.5rem;
+
+            & > th {
+                color: $color-tabs-information-table-th;
+                font-family: $font-bolder-xxl;
+            }
+        }
+    }
+
+}
+

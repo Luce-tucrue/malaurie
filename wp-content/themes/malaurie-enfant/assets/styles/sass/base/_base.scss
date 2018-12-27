@@ -1,0 +1,69 @@
+html {
+    font-size: 62.5%; //initialize 1rem to 10px
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-body;
+    color: $font-color-basic;
+    font-family: $font-normal;
+    font-size: $font-size-basic;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+.logo {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 1.5rem;
+
+    &__sub-band {
+        position: absolute;
+        bottom: 0.3rem;
+        left: 4rem;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+.main {
+    flex: 1 0 auto;
+
+    .producer-area & {
+        margin-top: 9.5rem;
+    }
+
+    .subscription-area & {
+        margin-top: 7.5rem;
+    }
+}
+
+.box {
+    padding: 1.5rem;
+    background-color: $background-box;
+}
+
+.no-margin {
+    margin: 0 !important; // sass-lint:disable-line no-important
+}
+
+.no-padding {
+    padding: 0 !important; // sass-lint:disable-line no-important
+}
+
+.link {
+    color: $color-link;
+    text-decoration: underline;
+}
+
+.text-small {
+
+    .subscription-area & {
+        font-size: 1.3rem;
+    }
+}

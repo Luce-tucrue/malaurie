@@ -1,0 +1,23 @@
+.confirmation {
+    padding: 9rem 3rem 7rem 3rem;
+
+    &__title {
+        color: $color-confirmation-title;
+        font-size: 3.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 3rem;
+        font-size: 2.2rem;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 3rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}

@@ -1,0 +1,65 @@
+.radio {
+    position: relative;
+
+    &__label {
+        position: relative;
+        padding-left: 3rem;
+        cursor: pointer;
+    }
+
+    &__input {
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+
+        &:checked ~ .radio__check {
+            &::after {
+                display: block;
+            }
+        }
+    }
+
+    &__check {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        transform: translateY(-50%);
+        border: 1px solid $color-border-subscription-radio;
+        border-radius: 50%;
+        background-color: $background-subscription-radio;
+
+        &.radio__check--center {
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &::after {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 1.5rem;
+            height: 1.5rem;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background-color: $color-subscription-radio-checked;
+            content: "";
+        }
+
+    }
+}
+
+.radio__group {
+    display: flex;
+    align-items: center;
+
+    .radio {
+
+        &:not(:last-of-type) {
+            margin-right: 3rem;
+        }
+    }
+}
