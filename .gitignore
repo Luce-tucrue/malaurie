@@ -6,7 +6,10 @@
 .vscode/*
 
 # PHPStorm conf
-.idea/*
+.idea/
 
 #Integration
 wp-content/themes/malaurie-enfant/node_modules/*
+/node_modules
+**/node_modules
+
