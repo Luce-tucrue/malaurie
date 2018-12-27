@@ -3,8 +3,6 @@
 @import "../../../node_modules/bootstrap/scss/_functions"; // sass-lint:disable-line clean-import-paths
 @import "../../../node_modules/bootstrap/scss/_variables"; // sass-lint:disable-line clean-import-paths
 @import "../../../node_modules/bootstrap/scss/mixins/_breakpoints"; // sass-lint:disable-line clean-import-paths
-@import "vendors/owl-carousel/owl.carousel.min.css";
-@import "vendors/owl-carousel/owl.theme.default.min.css";
 
 /*HELPERS*/
 @import "helpers/variables";
@@ -18,37 +16,7 @@
 @import "base/base";
 
 /*COMPONENTS*/
-@import "components/pagination";
-@import "components/navigation";
-@import "components/top";
-@import "components/connect-box";
-@import "components/notification";
-@import "components/filter";
-@import "components/table";
 @import "components/button";
-@import "components/step-list";
-@import "components/list";
-@import "components/accordion";
-@import "components/accordion-installation";
-@import "components/chart";
-@import "components/toolbox";
-@import "components/profile";
-@import "components/section";
-@import "components/carousel-installation";
-@import "components/carousel-connect";
-@import "components/table-resume";
-@import "components/tabs-information";
-@import "components/forms/form";
-@import "components/forms/select";
-@import "components/forms/input";
-@import "components/forms/radio";
-@import "components/forms/checkbox";
-@import "components/forms/label";
-@import "components/forms/textarea";
-@import "components/energy-installed";
-@import "components/confirmation";
-@import "components/account-creation";
-@import "components/subsection";
 
 /*LAYOUT*/
 @import "layout/forms";

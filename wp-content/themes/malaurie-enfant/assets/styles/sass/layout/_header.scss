@@ -8,9 +8,4 @@
     background-color: $background-header;
     box-shadow: 0 -1px 3px $box-shadow-header;
     z-index: 3;
-
-    &--right {
-        display: flex;
-        align-items: center;
-    }
 }
