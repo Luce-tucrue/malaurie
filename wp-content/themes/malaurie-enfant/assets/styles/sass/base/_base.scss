@@ -15,6 +15,21 @@ body {
     height: 100%;
 }
 
+a {
+    color: $blue-duck-lighten;
+    text-decoration: none;
+    
+    &:hover,
+    &:visited {
+        color: $blue-duck-lighter;
+        text-decoration: underline;
+    }
+    
+    &:focus {
+    
+    }
+}
+
 
 .site-content {
     margin-top: 26rem; //header height without navbar
@@ -27,5 +42,49 @@ body {
     
     #contact & {
         max-width: 92rem;
+        
+        .wp-block-columns {
+            margin-bottom: 7rem;
+        }
+        
+        .wp-block-column {
+            padding: 1.5rem;
+            color: $grey-dark;
+            background-color: $grey-light-2;
+            
+            & > h3 {
+                margin: 0;
+                color: $grey-dark;
+            }
+            
+            & > p {
+                margin: 0;
+            }
+            
+            &:nth-child(odd) {
+                color: $white;
+                background-color: $blue-duck-lighten;
+    
+                & > h3 {
+                    color: $white;
+                }
+            }
+        }
     }
 }
+
+/*Custom wordpress class */
+
+.wp-block-column {
+    
+    &:not(:first-child) {
+        margin-left: 1.5rem;
+    }
+    
+    &:not(:last-child) {
+        margin-right: 1.5rem;
+    }
+    
+}
+
+

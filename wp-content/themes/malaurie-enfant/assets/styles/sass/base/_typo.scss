@@ -13,13 +13,15 @@ h2 {
 }
 
 h3 {
-    padding-bottom: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
     color: $blue-duck-lighter;
     font-family: $font-title;
     font-size: 2.6rem;
 }
 
 h4 {
+    padding-top: 1.5rem;
     padding-bottom: 2rem;
     color: lighten($blue-duck-lighter, 5%);
     font-family: $font-title;

@@ -1,7 +1,7 @@
 .navigation {
+    width: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
 }
 
 .nav-menu { //ul
@@ -20,8 +20,8 @@
             font-size: 1.9rem;
     
             &:hover {
-                color: $blue-duck-lighter;
                 border-bottom: .1rem dotted $blue-duck-lighter;
+                color: $blue-duck-lighter;
             }
     
             &:hover,
@@ -32,8 +32,8 @@
         
         &.current-menu-item {
             &>a {
-                color: $blue-duck-lighter;
                 border-bottom: .1rem dotted $blue-duck-lighter;
+                color: $blue-duck-lighter;
             }
         }
         

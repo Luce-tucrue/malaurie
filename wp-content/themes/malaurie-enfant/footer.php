@@ -13,19 +13,21 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'malaurie' ) ); ?>">
+	<footer id="colophon" class="footer">
+		<div class="container">
+			<a href="<?php echo esc_url( __( '/mentions-legales', 'malaurie' ) ); ?>" class="footer__link">
 				<?php
 				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'malaurie' ), 'WordPress' );
+				printf( esc_html__( 'Mentions légales', 'malaurie' ), 'WordPress' );
 				?>
 			</a>
 			<span class="sep"> | </span>
+            <a href="http://www.lucile-fromant.fr" class="footer__link" target="_blank">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'malaurie' ), 'malaurie', '<a href="http://www.lucile-fromant.fr">Lucile Fromant</a>' );
+				printf( esc_html__( 'Site réalisé par %s.', 'malaurie' ), 'Lucile Fromant' );
 				?>
+            </a>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

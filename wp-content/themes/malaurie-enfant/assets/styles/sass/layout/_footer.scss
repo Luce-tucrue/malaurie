@@ -2,9 +2,18 @@
     flex-shrink: 0;
     margin-top: 10rem;
     padding: 1.5rem;
+    background-color: $blue-duck-lighter;
+    color: $grey-dark;
+    
+    &__link,
+    &__link:visited,
+    &__link:hover {
+        color: $white;
+    }
 
     &__text {
-        padding: 1rem 0;
+        color: $grey-light;
     }
+    
 }
 
