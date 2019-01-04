@@ -14,9 +14,14 @@
 /*BASE*/
 @import "base/reset";
 @import "base/base";
+@import "base/typo";
 
 /*COMPONENTS*/
 @import "components/button";
+@import "components/navigation";
+@import "components/section";
+@import "components/forms/input";
+@import "components/forms/label";
 
 /*LAYOUT*/
 @import "layout/forms";

@@ -1,11 +1,45 @@
 .header {
-    display: flex;
     position: fixed;
     top: 0;
-    justify-content: space-between;
     width: 100%;
-    padding: 1.5rem;
-    background-color: $background-header;
-    box-shadow: 0 -1px 3px $box-shadow-header;
-    z-index: 3;
+    padding: 0;
+    background-color: $white;
+
+    &__branding {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0 4rem 0;
+
+        &__title {
+            margin-top: 2rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+
+            &__link {
+
+                &:hover,
+                &:visited {
+                    color: $grey-dark;
+                    text-decoration: none;
+                }
+
+                &__name {
+                    display: block;
+                    color: $grey-dark;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+
+                &__description {
+                    display: block;
+                    font-family: $font-normal;
+                    font-size: 1.4rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
+

@@ -1,0 +1,25 @@
+.section {
+    margin: 0;
+    padding: 7rem 5rem;
+    background-color: $white;
+    
+    &:nth-child(even) {
+        background-color: $grey-light;
+    }
+    
+    &__title {
+        padding-bottom: 4rem;
+        color: $blue-duck;
+        font-family: $font-title;
+        font-size: 4rem;
+        text-align: center;
+        
+        .section:first-of-type & {
+            display: none;
+        }
+    }
+    
+    &__content {
+        font-size: $font-size-basic;
+    }
+}

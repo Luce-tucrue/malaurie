@@ -5,6 +5,9 @@ html {
 body {
     display: flex;
     flex-direction: column;
+    color: $grey-dark;
+    font-family: $font-normal;
+    font-size: $font-size-basic;
 }
 
 html,
@@ -12,3 +15,17 @@ body {
     height: 100%;
 }
 
+
+.site-content {
+    margin-top: 26rem; //header height without navbar
+}
+
+
+/*Specific*/
+
+.container {
+    
+    #contact & {
+        max-width: 92rem;
+    }
+}

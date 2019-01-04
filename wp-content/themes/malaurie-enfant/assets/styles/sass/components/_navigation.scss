@@ -1,0 +1,42 @@
+.navigation {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.nav-menu { //ul
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    .menu-item {
+        
+        &>a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: $grey-dark;
+            font-size: 1.9rem;
+    
+            &:hover {
+                color: $blue-duck-lighter;
+                border-bottom: .1rem dotted $blue-duck-lighter;
+            }
+    
+            &:hover,
+            &:visited {
+                text-decoration: none;
+            }
+        }
+        
+        &.current-menu-item {
+            &>a {
+                color: $blue-duck-lighter;
+                border-bottom: .1rem dotted $blue-duck-lighter;
+            }
+        }
+        
+       
+    }
+}

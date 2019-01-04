@@ -1,0 +1,41 @@
+h1 {
+    padding-bottom: 4rem;
+    color: $blue-duck;
+    font-family: $font-title;
+    font-size: 4rem;
+}
+
+h2 {
+    padding-bottom: 4rem;
+    color: $blue-duck;
+    font-family: $font-title;
+    font-size: 4rem;
+}
+
+h3 {
+    padding-bottom: 3rem;
+    color: $blue-duck-lighter;
+    font-family: $font-title;
+    font-size: 2.6rem;
+}
+
+h4 {
+    padding-bottom: 2rem;
+    color: lighten($blue-duck-lighter, 5%);
+    font-family: $font-title;
+    font-size: 2.5rem;
+}
+
+h5 {
+    padding-bottom: 1rem;
+    color: $grey-dark;
+    font-family: $font-title;
+    font-size: 2rem;
+}
+
+h6 {
+    padding-bottom: 1rem;
+    color: lighten($grey-dark, 5%);
+    font-family: $font-title;
+    font-size: 1.8rem;
+}

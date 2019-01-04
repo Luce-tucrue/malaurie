@@ -10,45 +10,18 @@
 
 
 @font-face {
-    font-family: "sourceSansPro";
+    font-family: "didot";
     font-style: normal;
     font-weight: normal;
-    src:  url("../fonts/SourceSansPro/sourcesanspro-regular-webfont.woff2"),
-    url("../fonts/SourceSansPro/sourcesanspro-regular-webfont.woff") format("woff");
+    src:  url("../fonts/didot/Didot.woff2"),
+    url("../fonts/didot/Didot.woff") format("woff");
 }
 
 @font-face {
-    font-family: "sourceSansProBlack";
+    font-family: "gillSans";
     font-style: normal;
     font-weight: normal;
-    src:  url("../fonts/SourceSansPro/sourcesanspro-black-webfont.woff2"),
-    url("../fonts/SourceSansPro/sourcesanspro-black-webfont.woff") format("woff");
+    src:  url("../fonts/gillSans/GillSans-Light.woff2"),
+    url("../fonts/gillSans/GillSans-Light.woff") format("woff");
 
 }
-
-@font-face {
-    font-family: "sourceSansProBold";
-    font-style: normal;
-    font-weight: normal;
-    src:  url("../fonts/SourceSansPro/sourcesanspro-bold-webfont.woff2"),
-    url("../fonts/SourceSansPro/sourcesanspro-bold-webfont.woff") format("woff");
-}
-
-
-@font-face {
-    font-family: "sourceSansProSemiBold";
-    font-style: normal;
-    font-weight: normal;
-    src:  url("../fonts/SourceSansPro/sourcesanspro-semibold-webfont.woff2"),
-    url("../fonts/SourceSansPro/sourcesanspro-semibold-webfont.woff") format("woff");
-}
-
-
-@font-face {
-    font-family: "sourceSansProLight";
-    font-style: normal;
-    font-weight: normal;
-    src:  url("../fonts/SourceSansPro/sourcesanspro-light-webfont.woff2"),
-    url("../fonts/SourceSansPro/sourcesanspro-light-webfont.woff") format("woff");
-}
-
