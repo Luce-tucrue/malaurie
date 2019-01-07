@@ -5,10 +5,18 @@
     background-color: $blue-duck-lighter;
     color: $grey-dark;
     
-    &__link,
-    &__link:visited,
-    &__link:hover {
-        color: $white;
+    &__link {
+        color: $white !important; // sass-lint:disable-line no-important
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: underline !important; // sass-lint:disable-line no-important
+        }
+        
+        &:visited,
+        &:hover {
+            color: $white;
+        }
     }
 
     &__text {
@@ -16,4 +24,5 @@
     }
     
 }
+
 

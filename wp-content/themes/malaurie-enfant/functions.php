@@ -12,6 +12,7 @@ function theme_enqueue_styles() {
 
 function child_script() {
     wp_enqueue_script( 'child_script', get_stylesheet_directory_uri() . '/assets/js/script.js' , array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'bootstrap_js', get_stylesheet_directory_uri() . '/node_modules/bootstrap/dist/js/bootstrap.js' , array( 'jquery' ), array( 'jquery' ), '1.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'child_script');
 
