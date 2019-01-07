@@ -15,7 +15,7 @@
 
 <footer id="colophon" class="footer">
     <div class="container">
-        <a class="footer__link" role="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        <a class="footer__link" role="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" id="mentions-legales">
             Mentions légales
         </a>
 
