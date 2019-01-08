@@ -36,6 +36,10 @@ a {
 
 .container {
     
+    #carousel & { // sass-lint:disable-line no-ids
+        max-width: 76.8rem;
+    }
+    
     #contact & { // sass-lint:disable-line no-ids
         max-width: 92rem;
         

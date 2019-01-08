@@ -31,3 +31,8 @@ require get_stylesheet_directory() . '/inc/image-class.php';
  * menu to prevent to go to single page.
  */
 require get_stylesheet_directory() . '/inc/menu.php';
+
+/**
+ * Load Citation functions.
+ */
+require get_stylesheet_directory() . '/inc/citation.php';

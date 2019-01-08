@@ -48,10 +48,23 @@
                 aria-expanded="false"><?php esc_html_e('Primary Menu', 'malaurie'); ?></button>
         <div class="navigation">
 
-          <?php wp_nav_menu( array( 'theme_location' => 'menu-1','menu' => 'navigation','walker' => new mono_walker() ) ); ?>
+            <?php
+            if ( get_page_template_slug( get_the_ID('2') ) ){
+                wp_nav_menu( array( 'theme_location' => 'menu-1','menu' => 'navigation','walker' => new mono_walker() ) );
+
+            } else {
+                wp_nav_menu( array( 'theme_location' => 'menu-1','menu' => 'navigation'));
+            }
+            ?>
+
+
         </div>
       </div>
     </nav><!-- #site-navigation -->
   </header><!-- #masthead -->
 
   <div id="content" class="site-content">
+
+
+
+

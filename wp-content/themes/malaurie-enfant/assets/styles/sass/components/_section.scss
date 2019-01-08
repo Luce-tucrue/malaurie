@@ -17,9 +17,58 @@
         .section:first-of-type & { // sass-lint:disable-line force-pseudo-nesting
             display: none;
         }
+        
+        .page-template-default & {
+            
+                display: block!important;
+        }
+        
+        #carousel & { // sass-lint:disable-line no-ids
+            display: none;
+        }
     }
     
     &__content {
         font-size: $font-size-basic;
+        
+        #carousel & { // sass-lint:disable-line no-ids
+    
+            a.rpc-title {
+                pointer-events: none;
+                cursor: default;
+                text-decoration: none;
+            }
+            
+            blockquote {
+                display: block;
+                position: relative;
+                padding: 0 3rem;
+                color: $blue-duck;
+                font-size: 3.4rem;
+                text-align: center;
+                
+                &::before {
+                    content: "“";
+                }
+    
+                &::after {
+                    content: "”";
+                }
+                
+                & > p {
+                    display: initial;
+                }
+                
+                
+            }
+            
+            .rpc-content {
+                text-align: right;
+            }
+        }
+        
     }
+    
 }
+
+

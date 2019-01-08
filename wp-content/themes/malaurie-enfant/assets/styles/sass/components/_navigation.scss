@@ -13,7 +13,11 @@
     
     .menu-item {
         
-        &>a {
+        &#menu-item-106 { // sass-lint:disable-line no-ids
+            display: none;
+        }
+        
+        & > a {
             display: block;
             padding: 1rem 1.5rem;
             color: $grey-dark;
