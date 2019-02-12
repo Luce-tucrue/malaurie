@@ -28,7 +28,11 @@ a {
 
 
 .site-content {
-    margin-top: 26rem; //header height without navbar
+    margin-top: 18rem; //header height without navbar
+    
+    @include media-breakpoint-up(md) {
+        margin-top: 26rem;
+    }
 }
 
 
@@ -48,9 +52,17 @@ a {
         }
         
         .wp-block-column {
+            margin-right: 0;
+            margin-left: 0;
             padding: 1.5rem;
             background-color: $grey-light-2;
             color: $grey-dark;
+    
+            @include media-breakpoint-up(md) {
+                margin-right: 0;
+                margin-bottom: 0;
+                margin-left: 1.5rem;
+            }
     
             & > h3 {
                 margin: 0;
@@ -62,8 +74,16 @@ a {
             }
             
             &:nth-child(odd) {
+                margin-bottom: 1.5rem;
                 background-color: $blue-duck-lighten;
                 color: $white;
+    
+                @include media-breakpoint-up(md) {
+                    margin-right: 1.5rem;
+                    margin-bottom: 0;
+                }
+                
+                
     
                 & > h3 {
                     color: $white;
@@ -85,6 +105,13 @@ a {
         margin-right: 1.5rem;
     }
     
+}
+
+/* Cookie plugin */
+
+#cookie-law-info-again { // sass-lint:disable-line no-ids
+    right: 0 !important; // sass-lint:disable-line no-important
+    width: 100% !important; // sass-lint:disable-line no-important
 }
 
 

@@ -1,26 +1,34 @@
 .section {
     margin: 0;
-    padding: 7rem 5rem;
+    padding: 5rem 0;
     background-color: $white;
+    
+    @include media-breakpoint-up(md) {
+        padding: 7rem 5rem;
+    }
     
     &:nth-child(even) {
         background-color: $grey-light;
     }
     
     &__title {
-        padding-bottom: 4rem;
+        padding-bottom: 2rem;
         color: $blue-duck;
         font-family: $font-title;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: center;
+    
+        @include media-breakpoint-up(md) {
+            padding-bottom: 4rem;
+            font-size: 4rem;
+        }
         
         .section:first-of-type & { // sass-lint:disable-line force-pseudo-nesting
             display: none;
         }
         
         .page-template-default & {
-            
-                display: block!important;
+            display: block !important; // sass-lint:disable-line no-important
         }
         
         #carousel & { // sass-lint:disable-line no-ids
@@ -33,10 +41,10 @@
         
         #carousel & { // sass-lint:disable-line no-ids
     
-            a.rpc-title {
-                pointer-events: none;
-                cursor: default;
+            a.rpc-title { // sass-lint:disable-line force-element-nesting no-qualifying-elements
                 text-decoration: none;
+                cursor: default;
+                pointer-events: none;
             }
             
             blockquote {
